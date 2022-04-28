@@ -3,8 +3,8 @@ import java.util.ArrayList;
 
 public class Anfibio extends Animal{
 	private static ArrayList <Anfibio> listado = new ArrayList<>();
-	public static int Ranas;
-	public static int Salamandras;
+	public static int ranas;
+	public static int salamandras;
 	private String colorPiel;
 	private boolean Venenoso;
 
@@ -33,7 +33,7 @@ public class Anfibio extends Animal{
 	}
 
 	public static Anfibio crearRana(String nombre, int edad, String genero) {
-		Ranas++;
+		ranas++;
 		Anfibio rana = new Anfibio(nombre, edad, "selva", genero, "rojo", true);
 		listado.add(rana);
 		return rana;
@@ -41,7 +41,7 @@ public class Anfibio extends Animal{
 
 
 	public static Anfibio crearSalamandra(String nombre, int edad, String genero) {
-		Salamandras++;
+		salamandras++;
 		Anfibio salamandra = new Anfibio(nombre, edad, "selva", genero, "negro y amarillo", false);
 		listado.add(salamandra);
 		return salamandra;

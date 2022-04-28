@@ -3,8 +3,8 @@ import java.util.ArrayList;
 
 public class Reptil extends Animal{
 	private static ArrayList<Reptil> listado = new ArrayList<>();
-	public static int Iguanas;
-	public static int Serpientes;
+	public static int iguanas;
+	public static int serpientes;
 	private String ColorEscamas;
 	private int LargoCola;
 	
@@ -33,13 +33,13 @@ public class Reptil extends Animal{
 	
 	public static Reptil crearIguana(String nombre, int edad, String genero) {
 		Reptil Iguana = new Reptil(nombre, edad, "humedal", genero, "verde", 3);
-		Iguanas++;
+		iguanas++;
 		return Iguana;
 	}
 	
 	public static Reptil crearSerpiente(String nombre, int edad, String genero) {
 		Reptil Serpiente = new Reptil(nombre, edad, "jungla", genero, "blanco", 1);
-		Serpientes++;
+		serpientes++;
 		return Serpiente;
 	}
 	
