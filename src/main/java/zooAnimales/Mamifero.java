@@ -4,22 +4,22 @@ import java.util.ArrayList;
 
 public class Mamifero extends Animal {
 	private static ArrayList <Mamifero> listado = new ArrayList<>();
-	public static int Caballos;
-	public static int Leones;
-	private boolean Pelaje;
-	private int Patas;
+	public static int caballos;
+	public static int leones;
+	private boolean pelaje;
+	private int patas;
 
     public Mamifero(String nombre, int edad, String habitat, String genero, boolean pelaje, int patas) {
         super(nombre, edad, habitat, genero);
-        this.Pelaje = pelaje;
-        this.Patas = patas;
+        this.pelaje = pelaje;
+        this.patas = patas;
         listado.add(this);
     }
 
 	public Mamifero() {
 		super(null, 0, null, null);
-		this.Pelaje = false;
-		this.Patas = 0;
+		this.pelaje = false;
+		this.patas = 0;
 		listado.add(this);
 		
 	}
@@ -30,31 +30,31 @@ public class Mamifero extends Animal {
 	
 	public static Mamifero crearCaballo(String nombre, int edad, String genero ) {
 		Mamifero caballo = new Mamifero(nombre, edad, "pradera", genero, true, 4);
-		Caballos++;
+		caballos++;
 		return caballo; 
 		
 	}
 	
 	public static Mamifero crearLeon(String nombre, int edad, String genero) {
 		Mamifero leon = new Mamifero(nombre, edad, "selva", genero, true, 4);
-		Leones++;
+		leones++;
 		return leon;
 		
 	}
 	
 	public boolean isPelaje() {
-		return Pelaje;
+		return pelaje;
 	}
 	
 	public void setPelaje(boolean pelaje) {
-		this.Pelaje = pelaje;
+		this.pelaje = pelaje;
 	}
 
 	public int getPatas() {
-		return Patas;
+		return patas;
 	}
 
 	public void setPatas(int patas) {
-		this.Patas = patas;
+		this.patas = patas;
 	}
 }	
